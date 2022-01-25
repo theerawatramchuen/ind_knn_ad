@@ -1,7 +1,7 @@
 # Industrial KNN-based Anomaly Detection 
 # https://github.com/rvorias/ind_knn_ad
 #
-# Jetson Nano,AGX and RPI4 Installation Script
+# Jetson AGX,Nano and RPI4 Installation Script
 # Theerawat 24-Jan-22
 #
 $ sudo apt-get purge libreoffice*
@@ -10,9 +10,9 @@ $ sudo apt-get update && sudo apt-get upgrade
 $ sudo apt-get install git cmake
 $ sudo apt update && sudo apt upgrade && sudo apt install curl && sudo apt-get install libcurl4-openssl-dev
 #
-$ wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-aarch64.sh
-$ chmod +x Miniconda3-py37_4.10.3-Linux-aarch64.sh
-$ ./Miniconda3-py37_4.10.3-Linux-aarch64.sh
+$ wget https://repo.anaconda.com/miniconda/Miniconda3-py37_4.10.3-Linux-aarch64.sh ### For Jetson nano Miniconda3-py39_4.9.2-Linux-aarch64.sh
+$ chmod +x Miniconda3-py37_4.10.3-Linux-aarch64.sh  ### For Jetson nano Miniconda3-py39_4.9.2-Linux-aarch64.sh
+$ ./Miniconda3-py37_4.10.3-Linux-aarch64.sh  ### For Jetson nano Miniconda3-py39_4.9.2-Linux-aarch64.sh
 $ conda update conda
 $ conda create -n ind_knn_ad python=3.7
 $ conda activate ind_knn_ad
