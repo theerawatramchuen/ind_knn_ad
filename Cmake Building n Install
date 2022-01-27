@@ -1,4 +1,5 @@
 Ref link : https://askubuntu.com/questions/355565/how-do-i-install-the-latest-version-of-cmake-from-the-command-line
+           https://askubuntu.com/questions/1125808/how-to-upgrade-cmake-in-arm-based-ubuntu
 
 B. Building and Installing (Recommended for developers)
 For this approach you need to install the GCC tools:
