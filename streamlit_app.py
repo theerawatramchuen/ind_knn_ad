@@ -19,8 +19,8 @@ from indad.data import IMAGENET_MEAN, IMAGENET_STD
 
 N_IMAGE_GALLERY = 4
 N_PREDICTIONS = 2
-METHODS = ["SPADE", "PaDiM", "PatchCore"]
-BACKBONES = ["efficientnet_b0", "tf_mobilenetv3_small_100"]
+METHODS = ["SPADE"] ### METHODS = ["SPADE", "PaDiM", "PatchCore"]
+BACKBONES = ["efficientnet_b0"] ### BACKBONES = ["efficientnet_b0", "tf_mobilenetv3_small_100"]
 
 # keep the two smallest datasets
 mvtec_classes = ["hazelnut_reduced", "transistor_reduced"]
@@ -80,7 +80,7 @@ def main():
 
     st.sidebar.title("Config")
 
-    app_custom_dataset = st.sidebar.checkbox("Custom dataset", False)
+    app_custom_dataset = st.sidebar.checkbox("Custom dataset", True) ### False
     if app_custom_dataset:
         app_custom_train_images = st.sidebar.file_uploader(
             "Select 3 or more TRAINING images.",
@@ -160,7 +160,7 @@ def main():
             train_dataset = st.session_state.train_dataset
             test_dataset = st.session_state.test_dataset
 
-        st.header("Random (healthy) training samples")
+        st.header("Random Normaly training samples")
         cols = st.columns(N_IMAGE_GALLERY)
         if not st.session_state.reached_test_phase:
             col_imgs = get_sample_images(train_dataset, N_IMAGE_GALLERY)
