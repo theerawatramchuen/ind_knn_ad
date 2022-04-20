@@ -29,6 +29,7 @@ $ conda install -c pytorch faiss-cpu ## faiss-gpu is an option
 CLI:
 ```shell
 $ python indad/run.py METHOD [--dataset DATASET]
+$ python indad/run2.py METHOD [--dataset DATASET] ### One time training and forever inferencing for reliability testing
 ```
 Results can be found under `./results/`.
 
