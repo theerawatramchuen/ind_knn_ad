@@ -20,7 +20,7 @@ This repo aims to reproduce the results of the following KNN-based anomaly detec
 ## Install in Conda environment
 
 ```shell
-$ pip install -r requirements.txt <br/>
+$ pip install -r requirements.txt 
 $ conda install -c pytorch faiss-cpu ## faiss-gpu is an option
 ```
 
