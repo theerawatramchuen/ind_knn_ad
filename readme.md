@@ -17,10 +17,11 @@ This repo aims to reproduce the results of the following KNN-based anomaly detec
 
 ---
 
-## Install
+## Install in Conda environment
 
 ```shell
-$ pipenv install -r requirements.txt
+$ pip install -r requirements.txt <br/>
+$ conda install -c pytorch faiss-cpu ## faiss-gpu is an option
 ```
 
 ## Usage
