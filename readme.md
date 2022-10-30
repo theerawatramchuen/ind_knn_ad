@@ -22,6 +22,8 @@ This repo aims to reproduce the results of the following KNN-based anomaly detec
 ```shell
 $ conda create -n ind_knn_ad python=3.7 -y
 $ conda activate ind_knn_ad
+$ git clone https://github.com/theerawatramchuen/ind_knn_ad.git
+$ cd ind_knn_ad
 $ pip install -r requirements.txt 
 $ conda install -c pytorch faiss-cpu ## faiss-gpu is an option
 ```
