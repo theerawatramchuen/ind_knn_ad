@@ -1,5 +1,5 @@
 #Python 3.7.9 (tags/v3.7.9:13c94747c7, Aug 17 2020, 18:58:18) [MSC v.1900 64 bit (AMD64)] on win32
-streamlit==0.86.0
+streamlit==1.23.1
 wget==3.2
 matplotlib==3.3.4
 timm==0.4.12
@@ -13,3 +13,4 @@ scikit_learn==0.24.2
 protobuf==3.20.2
 altair==4.1.0
 urllib3==1.26.15
+
